@@ -12,7 +12,7 @@ ruta = "C:/Users/Pedro/Pictures/DUMMY_PHOTOS"
 os.makedirs(os.path.dirname(ruta), exist_ok=True)
 
 for elemento in lista:
-    cantidad_total = 51
+    cantidad_total = 21
     for i in range(1, cantidad_total):
         if(i < 10):
             name = f'{elemento}_00{i}'

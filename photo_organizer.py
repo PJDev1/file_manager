@@ -24,7 +24,6 @@ for numero_serie, lista_fotos in fotos_por_serie.items():
     carpeta_serie = os.path.join(ruta_destino, numero_serie)
     os.makedirs(carpeta_serie, exist_ok=True)
 
-    
     for i in range(0, len(lista_fotos), 15):
         bloque = lista_fotos[i:i+15]
         subcarpeta = os.path.join(carpeta_serie, f"{numero_serie}_{i//15 + 1}")
